@@ -2,41 +2,51 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>Sushi Village Redesign</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
     <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
     <!-- TODO: put your HTML code here! -->
-    <nav>
-      <p class="title">BANSON NYC</p>
-      <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Fashion Programs</li>
-        <li>Blog</li>
-        <li>Testimonials</li>
-        <li>Gallery</li>
-        <li>Contact Us</li>
-      </ul>
-    </nav>
-    <div class="block1" align="center">NYC Fashion Summer Camp
-      <img src="https://www.bansonnyc.com/users/HollandGrumieaux21169/docs/nyc-cab.jpg" alt="BansonCab" style="width:300px;height:320px;">
+    <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="#home" class="w3-bar-item w3-button">Sushi Village</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right">
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      </div>
     </div>
-    <div class="block2" align="center">NYC Bridal Week Adventure
-        <img src="https://www.bansonnyc.com/users/HollandGrumieaux21169/docs/bridalweekadventure.jpg" alt="BridalWeek" style="width:300px;height:320px;">
+  </div>
 
-        <p align="right"> Have you ever dreamt of seeing where "Say Yes to the Dress" is filmed and to see beautiful bridal gowns come down the runway a season before they hit the stores? Have you considered a career in styling or public relations? Would you love to go shopping and see some of the amazing stores in Soho? If you answered "yes" to any of these questions then you will be happy to know that Banson NYC...</p>
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
 
+    <img class="w3-image" src="sushi1.png" alt="Sushi Header" width="1600" height="800">
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:1100px">
+
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+       <img src="sushi2.png" class="w3-round w3-image" alt="Sushi Plate" width="500" height="750">
+      </div>
+
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">About</h1>
+        <p class="w3-large">Sushi village is a family-run restaurant in New York City. Nestled in the world-rated foodie borough of queens. it amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+        <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
     </div>
-    <div class="block3" align="center">Fashion Study Tours
-        <img src="https://www.bansonnyc.com/users/HollandGrumieaux21169/docs/group01.jpg" alt="Fashion Study Tours" style="width:300px;height:320px;">
-    </div>
-    <div class="block4" align="center">Spring 2019 Fashion Week Adventure
-        <img src="https://www.bansonnyc.com/users/HollandGrumieaux21169/docs/sudents.jpg" alt="NYFW" style="width:300px;height:320px;">
-    </div>
-    <footer>Made with <font color="hotpink">&hearts;</font> by Angela Zhuo // Brown CS1300</footer>
+
   </body>
 </html>
