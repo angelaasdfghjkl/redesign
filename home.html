@@ -16,15 +16,33 @@
     <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-      <a href="#home" class="w3-bar-item w3-button">Sushi Village</a>
+      <a href="#home" class="w3-bar-item w3-button active">Sushi Village</a>
       <!-- Right-sided navbar links. Hide them on small screens -->
-      <div class="w3-right">
-        <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
-        <a href="#menu" class="w3-bar-item w3-button w3-mobile">Menu</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+      <div class="w3-right" id= "myLinks">
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
       </div>
+      <a href="javascript:void(0);" class="icon"
+      onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </div>
+
+  <!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
   <!-- Header -->
   <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
@@ -37,7 +55,7 @@
 
     <!-- About Section -->
     <div class="w3-row w3-padding-64" id="about">
-      <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <div class="w3-col m6 w3-padding-large">
        <img src="sushi2.png" class="w3-round w3-image" alt="Sushi Plate" width="500" height="750">
       </div>
 
