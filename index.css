@@ -35,7 +35,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .w3-top a:nth-of-type(n) {display: none;}
+  .w3-top a:not(.active) {display: none;}
   .w3-top a.icon {
     float: right;
     display: block;
