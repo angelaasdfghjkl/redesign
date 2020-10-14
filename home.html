@@ -9,13 +9,12 @@
     <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
     <!-- TODO: put your HTML code here! -->
     <!-- Navbar (sit on top) -->
-  <div class="w3-top">
+  <div class="w3-top" id="myTopnav">
     <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
       <a href="#home" class="w3-bar-item w3-button active">Sushi Village</a>
       <!-- Right-sided navbar links. Hide them on small screens -->
@@ -23,26 +22,16 @@
         <a href="#about" class="w3-bar-item w3-button">About</a>
         <a href="#menu" class="w3-bar-item w3-button">Menu</a>
         <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
   </div>
 
   <!-- End smartphone / tablet look -->
 </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.className === "w3-right") {
-    x.className += " responsive";
-  } else {
-    x.className = "w3-right";
-  }
-}
-</script>
 
   <!-- Header -->
   <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
@@ -59,12 +48,21 @@ function myFunction() {
        <img src="sushi2.png" class="w3-round w3-image" alt="Sushi Plate" width="500" height="750">
       </div>
 
-      <div class="w3-col m6 w3-padding-large">
-        <h1 class="w3-center">About</h1>
-        <p class="w3-large">Sushi village is a family-run restaurant in New York City. Nestled in the world-rated foodie borough of queens. it amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <div class="w3-col m6 w3-padding-medium">
+        <p class="w3-medium">Sushi village is a family-run restaurant in New York City. Nestled in the world-rated foodie borough of Queens. it amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
         <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>
 
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "w3-top") {
+        x.className += " responsive";
+      } else {
+        x.className = "w3-top";
+      }
+    }
+    </script>
   </body>
 </html>
